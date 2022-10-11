@@ -1,0 +1,3 @@
+6;ASDF;C:\Users\drpvr\Desktop\exercicios eugenio\aguiadodesertolocagyn-main\AguiaDoDesertoLocadoraDeCarros\src\com\locagyn\imagens\Lambo.png
+16;FIAT MUDADO;C:\Users\drpvr\Desktop\exercicios eugenio\aguiadodesertolocagyn-main\AguiaDoDesertoLocadoraDeCarros\src\com\locagyn\imagens\Fiat.jfif
+17;GMC;C:\Users\drpvr\Desktop\exercicios eugenio\aguiadodesertolocagyn-main\AguiaDoDesertoLocadoraDeCarros\src\com\locagyn\imagens\Lambo.png
