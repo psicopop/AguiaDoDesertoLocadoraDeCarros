@@ -1,0 +1,1 @@
+4;FIAT;C:\Users\Aluno\Downloads\AguiaDoDesertoLocadoraDeCarros-integra-o-persistencia-e-controle-do-modelo\AguiaDoDesertoLocadoraDeCarros-integra-o-persistencia-e-controle-do-modelo\src\com\locagyn\imagens\Lambo.png;1;FBGDFB;
