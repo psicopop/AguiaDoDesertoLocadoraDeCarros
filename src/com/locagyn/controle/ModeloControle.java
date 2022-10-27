@@ -26,7 +26,7 @@ private boolean buscarModelo(String descricao)throws Exception{
             Iterator<Modelo> lista = listagemModelo.iterator();
             while(lista.hasNext()){
                  Modelo aux = lista.next();
-                if(aux.getDescricao().equalsIgnoreCase(descricao)){
+                if(aux.getDescricaoModelo().equalsIgnoreCase(descricao)){
                     return true;
                 }
             }
@@ -39,7 +39,7 @@ private boolean buscarModelo(String descricao)throws Exception{
         
 @Override
     public void incluirModelo(Modelo objeto) throws Exception {
-        if(buscarModelo(objeto.getDescricao())){
+        if(buscarModelo(objeto.getDescricaoModelo())){
             throw new Exception("Modelo já foi cadastrado");
         }
         modeloPersitencia.incluirModelo(objeto);
@@ -47,7 +47,7 @@ private boolean buscarModelo(String descricao)throws Exception{
 
     @Override
     public void alterarModelo(Modelo objeto) throws Exception {
-        if(buscarModelo(objeto.getDescricao())){
+        if(buscarModelo(objeto.getDescricaoModelo())){
             throw new Exception("Modelo já foi cadastrado");
         }
         modeloPersitencia.alterarModelo(objeto);

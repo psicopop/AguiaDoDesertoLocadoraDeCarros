@@ -33,19 +33,19 @@ public static int getIDModelo()throws FileNotFoundException, IOException{
         FileReader fr = new FileReader(nomeDoArquivo);
         BufferedReader br  = new BufferedReader(fr);
         String linha=br.readLine();
-        int id = Integer.parseInt(linha);
+        int idModelo = Integer.parseInt(linha);
         br.close();
-        id++;
+        idModelo++;
         //cria o arquivo
         FileWriter fw = new FileWriter(nomeDoArquivo);
         //Criar o buffer do arquivo
         BufferedWriter bw =new BufferedWriter(fw);
         //Escreve no arquivo
-        String saida = id+"";
+        String saida = idModelo+"";
         bw.write(saida);
         //fecha o arquivo
         bw.close();	
-        return id;
+        return idModelo;
     }     
     
     

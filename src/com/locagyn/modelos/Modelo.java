@@ -11,9 +11,9 @@ import com.locagyn.modelos.Marca;
  */
 public class Modelo {
     
-    private int id = 0;
-    private String descricao = "";
-    private String url = "";
+    private int idModelo = 0;
+    private String descricaoModelo = "";
+    private String urlModelo = "";
     private Marca marca;
     
     public Modelo(){
@@ -21,34 +21,38 @@ public class Modelo {
 }
     
 public Modelo (int id, String descricao, String url, Marca marca){
-    this.id = id;
-    this.url = url;
-    this.descricao = descricao;
+    this.idModelo = id;
+    this.urlModelo = url;
+    this.descricaoModelo = descricao;
     this.marca = marca;
 }
 
-    public int getId() {
-        return id;
+    public Modelo(int i, String toUpperCase, String text) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public int getidModelo() {
+        return idModelo;
     }
 
-    public String getDescricao() {
-        return descricao;
+    public void setIdModelo(int idModelo) {
+        this.idModelo = idModelo;
     }
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
+    public String getDescricaoModelo() {
+        return descricaoModelo;
     }
 
-    public String getUrl() {
-        return url;
+    public void setDescricaoModelo(String descricaoModelo) {
+        this.descricaoModelo = descricaoModelo;
     }
 
-    public void setUrl(String url) {
-        this.url = url;
+    public String getUrlModelo() {
+        return urlModelo;
+    }
+
+    public void setUrlModelo(String urlModelo) {
+        this.urlModelo = urlModelo;
     }
 
     public Marca getMarca() {
@@ -62,7 +66,7 @@ public Modelo (int id, String descricao, String url, Marca marca){
     @Override
     public String toString() {
         //ADICIONAR O RESTO CAMPO DE EXIT DA TELA
-         return id + ";" + descricao + ";" + url + ";"  ;
+         return idModelo + ";" + descricaoModelo + ";" + urlModelo + ";" + marca.getId() + ";"  ;
     }
     
     

@@ -1,3 +1,0 @@
-1;FBGDFB;C:\Users\Aluno\Downloads\AguiaDoDesertoLocadoraDeCarros-integra-o-persistencia-e-controle-do-modelo\AguiaDoDesertoLocadoraDeCarros-integra-o-persistencia-e-controle-do-modelo\src\com\locagyn\imagens\Fiat.jfif
-2;FL,SDMB;C:\Users\Aluno\Downloads\AguiaDoDesertoLocadoraDeCarros-integra-o-persistencia-e-controle-do-modelo\AguiaDoDesertoLocadoraDeCarros-integra-o-persistencia-e-controle-do-modelo\src\com\locagyn\imagens\Fiat.jfif
-3;ASFJGSDF;C:\Users\Aluno\Downloads\AguiaDoDesertoLocadoraDeCarros-integra-o-persistencia-e-controle-do-modelo\AguiaDoDesertoLocadoraDeCarros-integra-o-persistencia-e-controle-do-modelo\src\com\locagyn\imagens\Lambo.png

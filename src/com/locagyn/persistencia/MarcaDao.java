@@ -69,7 +69,45 @@ public class MarcaDao implements IMarcaDao{
        }
             
                     
-                    
+    @Override
+    public Marca buscar(Marca objeto) throws Exception {
+    try{
+        FileReader fr = new FileReader(nomeDoArquivoNoDisco);
+        BufferedReader br = new BufferedReader(fr);
+        String linha = "";
+        String descricao = "";
+         String url = "";
+         int id = objeto.getId();
+         //Buscando pelo Id a localização 
+         if(objeto.getId() != 0){
+             while((linha = br.readLine())!= null){
+                 String marcaString[] = linha.split(";");
+                 if(Integer.parseInt(marcaString[0])== objeto.getId()){
+                     descricao = marcaString[1];
+                     url = marcaString[2];
+                     break;
+                 }
+             }
+         }
+         //Busca pela Descrição da Marca
+         if(id == 0){
+             while((linha = br.readLine()) != null){
+                 String marcaString[] = linha.split(";");
+                 if(marcaString[1].equals(objeto.getDescricao())){
+                     id = Integer.parseInt(marcaString[0]);
+                     descricao = marcaString[1];
+                     url = marcaString[2];
+                     break;
+                 }
+             }
+             
+         }
+         return new Marca(id, descricao, url);
+    }catch(Exception erro){
+        throw erro;
+    }
+    
+}
         
    
 

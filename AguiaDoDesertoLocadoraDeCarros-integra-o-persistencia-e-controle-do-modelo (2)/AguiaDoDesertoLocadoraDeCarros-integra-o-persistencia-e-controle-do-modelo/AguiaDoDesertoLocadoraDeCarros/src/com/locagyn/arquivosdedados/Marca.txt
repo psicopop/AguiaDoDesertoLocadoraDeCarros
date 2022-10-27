@@ -1,2 +1,0 @@
-1;FIAT;C:\Users\drpvr\Desktop\exercicios eugenio\aguiadodesertolocagyn-main\ProjetoLocaGynEstudo1\src\com\locagyn\imagens\Fiat.jfif
-2;TESTE;C:\Users\drpvr\Desktop\exercicios eugenio\aguiadodesertolocagyn-main\ProjetoLocaGynEstudo1\src\com\locagyn\imagens\Lambo.png

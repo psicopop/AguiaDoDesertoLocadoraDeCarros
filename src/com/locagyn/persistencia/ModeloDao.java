@@ -23,6 +23,8 @@ public class ModeloDao implements IModeloDao{
         nomeDoArquivoNoDiscoModelo = "./src/com/locagyn/arquivosdedados/Modelo.txt";
     }
 
+    IMarcaDao dMarca = new MarcaDao();
+    
     @Override
     public void incluirModelo(Modelo objeto) throws Exception {
         try {
@@ -31,7 +33,7 @@ public class ModeloDao implements IModeloDao{
             //Criar o Buffer do Arquivo
             BufferedWriter bw = new BufferedWriter(fw);
             //Incluindo o ID do Objeto referenciado na Marrca
-            objeto.setId(GeradorIdentificadorModelo.getIDModelo());
+            objeto.setIdModelo(GeradorIdentificadorModelo.getIDModelo());
             //Escrevendo os dados no arquivo 
             bw.write(objeto.toString() + "\n");
             //Criando o Arqueivo 
@@ -52,6 +54,7 @@ public class ModeloDao implements IModeloDao{
 
     }
 
+    
     @Override
     public ArrayList<Modelo> listagemModelo() throws Exception {
         try {
@@ -71,10 +74,13 @@ public class ModeloDao implements IModeloDao{
                 Marca objetoMarca = new Marca();
                 //Geração das informações na tabela
                 String vetorString[] = linha.split(";");
-                objetoModelo.setId(Integer.parseInt(vetorString[0]));
-                objetoModelo.setDescricao(vetorString[1]);
-                objetoModelo.setUrl(vetorString[2]);
-                vetorString[3] = objetoMarca.getId()+"";
+                objetoModelo.setIdModelo(Integer.parseInt(vetorString[0]));
+                objetoModelo.setDescricaoModelo(vetorString[1]);
+                objetoModelo.setUrlModelo(vetorString[2]);
+                objetoMarca.setId(Integer.parseInt(vetorString[3]));
+                objetoMarca = dMarca.buscar(objetoMarca);
+                objetoModelo.setMarca(objetoMarca);
+                //vetorString[3] = objetoMarca.getId()+"";
                 //Se colocar na frente de uma int +"", transforma em uma String;
                 //Acrecentando as informações na Lista
                 listaDeModelos.add(objetoModelo);
